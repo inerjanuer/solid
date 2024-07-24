@@ -1,16 +1,17 @@
 package com.solid.impl;
 
+import com.solid.Employee;
 import com.solid.interfaces.EmployeeOperatios;
 
 public class EmployeeManager implements EmployeeOperatios {
 
   @Override
-  public void addEmployee(String name) {
-    System.out.println("Se agrega el empleado: "+name);
+  public void addEmployee(Employee employee) {
+    System.out.println("Se agrega el empleado: "+ employee.getName());
   }
 
   @Override
-  public void removeEmployee(String name) {
-    System.out.println("Se elimina el empleado: "+name);
+  public void removeEmployee(Employee employee) {
+    System.out.println("Se elimina el empleado: " + employee.getName());
   }
 }

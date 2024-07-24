@@ -17,5 +17,5 @@ excelReportGenerator, PDFReportGenerator.
 4. Se divide la interface de EmployeeOperations por  ley de interface segregation, creando interface adicional 
 para el proceso de calculateSalary y saveToFile 
 5. La clase SalaryCaculator depende directamente de la implementación EmployManager. Debería depender de una abstracción en lugar de una clase directa.
-6. 
+6. Se cambia la clase Employee por una interfaz para que se adiera mejor al principi de inversion de dependencias y que asi el slario pueda calcularse sin importar el tipo d empleado
   

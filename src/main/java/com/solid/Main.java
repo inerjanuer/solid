@@ -1,16 +1,9 @@
 package com.solid;
 
-import com.solid.impl.EmployeeManager;
-import com.solid.impl.ExcelReportGenerator;
-import com.solid.impl.FileImpl;
-import com.solid.impl.PDFReportGenerator;
-import com.solid.impl.PartTimeEmployee;
-import com.solid.impl.SalaryCalculator;
+import com.solid.impl.*;
 import com.solid.interfaces.EmployeeOperatios;
 import com.solid.interfaces.FileOperation;
-import com.solid.interfaces.PartTimeOperation;
 import com.solid.interfaces.ReportOperation;
-import com.solid.interfaces.SalaryOperation;
 
 public class Main {
 
@@ -22,20 +15,24 @@ public class Main {
     report.generateReport();
     reportExcel.generateReport();
 
-    PartTimeOperation partTimeOperation = new PartTimeEmployee();
-    String name = partTimeOperation.getName();
-    System.out.println("El empleado por tiempos es: "+name);
+    Employee partTimeEmployee = new PartTimeEmployee("Hugo", "Aseo");
+    String partTimeEmployeeName = partTimeEmployee.getName();
+    System.out.println("El empleado por tiempo parcial es: "+partTimeEmployeeName);
 
-    SalaryOperation salaryOperation = new SalaryCalculator();
-    double value = salaryOperation.calculateSalary(new Employee("Pedro", "Cundinamarca"));
+    Employee fullTimeEmployee = new FullTimeEmployee("Paco", "Vice");
+    String fullTimeEmployeeName = fullTimeEmployee.getName();
+    System.out.println("El empleado por tiempo parcial es: "+fullTimeEmployeeName);
+
+    SalaryCalculator salaryOperation = new SalaryCalculator();
+    double value = salaryOperation.calculateSalary(fullTimeEmployee);
     System.out.println("Valor: "+ value);
 
     FileOperation fileOperation = new FileImpl();
     fileOperation.saveToFile("juan");
 
     EmployeeOperatios operatios = new EmployeeManager();
-    operatios.addEmployee("Felipe");
-    operatios.removeEmployee("Juan Carlos");
+    operatios.addEmployee(partTimeEmployee);
+    operatios.removeEmployee(fullTimeEmployee);
 
 
   }

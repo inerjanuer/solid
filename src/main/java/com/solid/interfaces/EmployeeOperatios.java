@@ -1,9 +1,11 @@
 package com.solid.interfaces;
 
+import com.solid.Employee;
+
 public interface EmployeeOperatios {
 
-  void addEmployee(String name);
+  void addEmployee(Employee employee);
 
-  void removeEmployee(String name);
+  void removeEmployee(Employee employee);
 
 }

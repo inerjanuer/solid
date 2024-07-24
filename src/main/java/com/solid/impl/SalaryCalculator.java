@@ -3,11 +3,11 @@ package com.solid.impl;
 import com.solid.Employee;
 import com.solid.interfaces.SalaryOperation;
 
-public class SalaryCalculator implements SalaryOperation {
+public class SalaryCalculator {
 
-  @Override
   public double calculateSalary(Employee employee) {
-    return 0;
+    // Calcular salario basado en el tipo de empleado
+    return 0.0;
   }
 
 }

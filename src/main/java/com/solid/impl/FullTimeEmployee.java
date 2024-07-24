@@ -1,15 +1,11 @@
 package com.solid.impl;
 
-
 import com.solid.Employee;
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
-public class PartTimeEmployee implements Employee {
+public class FullTimeEmployee implements Employee {
   private String name;
   private String department;
 
-  public PartTimeEmployee(String name, String department) {
+  public FullTimeEmployee(String name, String department) {
     this.name = name;
     this.department = department;
   }
