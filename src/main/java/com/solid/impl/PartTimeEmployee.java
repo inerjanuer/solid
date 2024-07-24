@@ -1,7 +1,7 @@
 package com.solid.impl;
 
 
-import com.solid.Employee;
+import com.solid.interfaces.Employee;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor

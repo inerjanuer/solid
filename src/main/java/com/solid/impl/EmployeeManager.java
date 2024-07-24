@@ -1,6 +1,6 @@
 package com.solid.impl;
 
-import com.solid.Employee;
+import com.solid.interfaces.Employee;
 import com.solid.interfaces.EmployeeOperatios;
 
 public class EmployeeManager implements EmployeeOperatios {

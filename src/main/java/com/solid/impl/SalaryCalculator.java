@@ -1,7 +1,6 @@
 package com.solid.impl;
 
-import com.solid.Employee;
-import com.solid.interfaces.SalaryOperation;
+import com.solid.interfaces.Employee;
 
 public class SalaryCalculator {
 

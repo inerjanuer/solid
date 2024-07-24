@@ -1,4 +1,4 @@
-package com.solid;
+package com.solid.interfaces;
 
 
 public interface Employee {

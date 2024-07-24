@@ -1,6 +1,7 @@
 package com.solid;
 
 import com.solid.impl.*;
+import com.solid.interfaces.Employee;
 import com.solid.interfaces.EmployeeOperatios;
 import com.solid.interfaces.FileOperation;
 import com.solid.interfaces.ReportOperation;
